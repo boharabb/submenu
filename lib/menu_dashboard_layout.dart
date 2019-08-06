@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'language.dart'
 final Color backgroundColor = Color(0xFF4A4A58);
 
 class MenuDashboardPage extends StatefulWidget {
@@ -61,14 +62,20 @@ Animation<Offset> _slideAnimation;
                 leading: Icon(Icons.language, color:Colors.blueGrey),
                 title: Text(
                   "language", style: TextStyle(color: Colors.blue, fontSize: 22.0)),
-                  onTap: (){},
+                  onTap: (){
+                    Navigator
+                  },
               ),
               
                 SizedBox(height: 13.0),
                 ListTile(
                   leading: Icon(Icons.book, color:Colors.blueGrey),
                   title: Text("Korean Grammar", style: TextStyle(color: Colors.blue, fontSize: 22.0)),
-                  onTap:(){} ,
+                  onTap:(){
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: ((context) => language()),
+                    ));
+                  } ,
                   ),
                 SizedBox(height: 13.0),
                 ListTile(
