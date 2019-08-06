@@ -57,18 +57,34 @@ Animation<Offset> _slideAnimation;
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-              Text(
-                
-                "language", style: TextStyle(color: Colors.purple, fontSize: 22.0, )),
+                ListTile(
+                leading: Icon(Icons.language, color:Colors.blueGrey),
+                title: Text(
+                  "language", style: TextStyle(color: Colors.blue, fontSize: 22.0)),
+                  onTap: (){},
+              ),
               
                 SizedBox(height: 13.0),
-                Text("Korean Grammar", style: TextStyle(color: Colors.purple, fontSize: 22.0)),
+                ListTile(
+                  leading: Icon(Icons.book, color:Colors.blueGrey),
+                  title: Text("Korean Grammar", style: TextStyle(color: Colors.blue, fontSize: 22.0)),
+                  onTap:(){} ,
+                  ),
                 SizedBox(height: 13.0),
-                Text("EPS-TOPIK", style: TextStyle(color: Colors.purple, fontSize: 22.0)),
+                ListTile(
+                  leading: Icon(Icons.person, color:Colors.blueGrey),
+                  title: Text("EPS-TOPIK", style: TextStyle(color: Colors.blue, fontSize: 22.0)),
+                  onTap:(){} ),
                 SizedBox(height: 13.0),
-                Text("Practice", style: TextStyle(color: Colors.purple, fontSize: 22.0)),
+                ListTile(
+                  leading: Icon(Icons.search, color:Colors.blueGrey),
+                  title: Text("Practice", style: TextStyle(color: Colors.blue, fontSize: 22.0)),
+                  onTap:(){} ),
                 SizedBox(height: 13.0),
-                Text("About us", style: TextStyle(color: Colors.purple, fontSize: 22.0)),
+                ListTile(
+                  leading: Icon(Icons.laptop, color:Colors.blueGrey),
+                  title: Text("About us", style: TextStyle(color: Colors.blue, fontSize: 22.0)),
+                  onTap:(){} ),
             ],
             ),
         ),
